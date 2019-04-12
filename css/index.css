@@ -1,0 +1,493 @@
+@charset "utf-8";
+/*css document*/
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+	margin:0;
+	padding:0;
+}
+*::selection{
+	background: #e67e22;
+	color: white;
+}
+body{
+	font-family: "微软雅黑",Arial;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border: 0;
+}
+a:link{
+	text-decoration: none;
+}		
+/*header*/
+
+header{
+	width: 100%;
+	height: 82px;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+	border-bottom: 1px solid #ccc;
+}
+.header-left{
+	height: 60px;
+	float: left;
+    padding: 30px 39px;
+    background-color: #fff;
+}
+@media screen and (max-width: 1055px) {
+	header{
+		height: 162px;
+	}
+}
+@media screen and (max-width: 990px) {
+	.header-left{
+		display: none;
+	}
+	header{
+		height: 82px;
+	}
+}
+@media screen and (max-width: 835px) {
+     header{
+     	height: 162px;
+     }
+}
+@media screen and (max-width: 768px) {
+		.input-group{
+			display: none;
+		}
+		.nav-right > li{
+			display: table-cell;
+		    width: 1%;
+		    position: inherit;
+		    text-align: center;
+		}
+}
+
+@media screen and (max-width: 767px){
+    header{
+    width: 100%;
+    margin: 0;
+}
+    .header-right{
+    	margin: 55px 15px!important;
+    }
+    .header-left-a{
+    	padding-top: 0!important;
+    }
+ 
+}
+@media screen and (max-width: 641px){
+	header{
+		height: 134px;
+	}
+	.nav-right{
+		display: block;
+	}
+	.aside-a{
+		margin-top: 55px;
+	}
+	.header-right{
+    	margin: -29px 15px!important;
+    }
+    .nav-right li span{
+    	display: none!important;
+    }
+    .nav-right li .icon-arrow-down{
+    	display: none!important;
+    }
+    .nav-right-a{
+    	width: 100%!important;
+    }
+     .nav-right-a li{
+    	width: 33%!important;
+    	text-align: center;
+    }
+}
+@media screen and(min-width: 992px){
+.col-md-9 .col-md-6 .col-ma-4 {
+    width: 100%;
+}
+}
+.header-left-a{
+	float: left;
+/*	height: 100%;*/
+	padding-top: 25px;
+	margin-left: 5px;
+    background: #fff;
+    cursor: pointer;	
+}
+.header-left-a i{
+	font-size: 27px;
+	color: black;
+}
+.navbar-left{
+	margin: 24px;
+	padding:0;
+}
+.form-control{
+    min-width: 200px;
+}
+.header-right{
+	float: right;
+	margin: 25px 15px;
+}
+.nav-right-a{
+	float: right;
+	height: 82px;	
+}
+.right-a{
+	float: left;
+	padding:25px 15px;
+}
+.right-a span{
+	font-size: 13px;
+}
+.right-a i{
+	color: #969696;
+}
+.right-a .icon-ling{
+	font-size: 28px;
+	position: relative;
+	right: 10px;
+}	
+.right-a .span-ico{
+	position: absolute;
+	margin-top: -40px;
+}
+.span-ico{
+	display: inline-block;
+    min-width: 10px;
+    padding: 3px 5px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: red;
+    border-radius: 10px;
+}
+.right-a .icon-wenhao{
+	font-size: 20px;
+}
+.right-b{
+	padding-top: 30px;
+}
+.span-icc{
+	color: #969696;
+}
+
+.right-sev{
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-top: 28px;
+    border-top: 2px solid #676a6d;
+}
+.right-sev li{
+	padding: 10px 0px 10px 15px;
+}
+.right-sev li a{
+	color: #676a6d;
+}
+.right-sev li span{
+	margin-left: 8px;
+	font-size: 14px;
+	color: #676a6d;
+}
+#right-sdf{
+	width: 200px;
+	position: absolute;
+	z-index: 9999;
+	margin-left: -85px;
+}
+#right-sd{
+	width: 200px;
+	position: absolute;
+	z-index: 9999;
+	margin-left: -105px;
+}
+
+/*section-left*/
+.section-left{
+    width: 260px;
+    height: 100%;
+    float: left;
+    background-color: #2B333E;
+    position: fixed;
+    left: 0;
+    margin-top: 80px;
+}
+.section-left ul li{
+	height: 60px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.section-left ul li span{
+	color: #dbdcde;
+	font-size: 13px;
+	margin-left: 8px;
+}
+.section-left ul li i{
+	color: #dbdcde;
+	font-size: 16px;
+
+}
+.section-left ul li:hover span{
+	color: white;
+}
+.section-left ul li:hover i{
+	color: #00aaff;
+}
+
+@media screen and (max-width: 1024px) {
+.section-left{
+	width: 0;
+}
+.section-left .btns{
+	display: none;
+}
+.aside{
+	width: 100%!important;
+	transition: all 1s;
+}
+  
+}
+
+/*aside*/
+.aside{ 
+	transition: all 0.3s ease-in-out;
+    width: calc(100% - 260px);
+    height: 100%;
+    left: 0;
+    float: right;
+    background-color: #f5f5fa;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin-top: 80px;
+}
+
+.aside-a{
+	padding: 28px 15px;
+	background: #ffffff;
+	margin-left: 27px;
+	margin-bottom: 30px;
+}
+.aside-a p{
+	font-size: 18px;
+	color: #707376;
+	line-height: 18px;
+}
+.aside-a h3{
+	font-size: 11px;
+	color: #8d99a8;
+}
+
+.metric{
+	border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #DCE6EB;
+    margin-top: 16px;
+}
+.icon{
+	border-radius: 50%;
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #0081c2;
+    text-align: center;
+}
+.metric p {
+    margin-bottom: 0;
+    line-height: 1.2;
+    text-align: right;
+}
+.metric .number {
+    display: block;
+    font-size: 28px;
+    font-weight: 300;
+}
+.metric .title {
+    font-size: 16px;
+}
+.metric i{
+	color: #ffffff;
+	font-size: 17px;
+}
+
+.airct-right{
+	margin:22px 10px 20px;
+    font-weight: 300;
+    text-align: right;
+}
+.airct-right .number{
+	font-size: 36px;
+}
+.airct-right .percentage{
+    position: relative;
+    top: -7px;
+}
+.airct-right .percentage i{
+	color: #41B314;
+	font-size: 22px;
+	margin-right: -15px;	
+}
+.airct-right .info-label{
+	display:block;
+    font-weight: normal;
+}
+
+.panel-footer {
+    background-color: #fafafa;
+}
+.panel .panel-note {
+    font-size: 13px;
+    line-height: 2.6;
+    color: #777777;
+}
+#mains{
+	width: 100%;
+	height: 388px;
+	background: #fff;
+}
+.panel .right{
+    position: absolute;
+    right: 40px;
+    top: 20%;
+    cursor: pointer;
+}
+.panel .panel-heading {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.panel .panel-heading .panel-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+.panel .right i{
+	font-size: 20px;
+	color: #abadae;
+}
+
+.fancy-checkbox {
+    float: left;
+    margin-top: 18px;
+    display: block;
+    padding-right: 20px;;	
+}
+.title{
+    display: block;
+	font-size: 16px;
+    font-weight: 600;
+    color: #676a6d;
+    padding-bottom: 8px;
+}
+.panel-body ul li{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #dbdbdb;
+}
+.short-description{
+	color: #b4b5b7;
+	font-size: 13px;
+}
+.date{
+	display: block;
+	padding-left: 33px;
+	padding-bottom: 20px;
+}
+.panel-body ul li:last-child{
+	border-bottom: none;
+}
+ul.activity-list > li .avatar {
+    width: 40px;
+}
+ul.activity-list > li {
+    padding: 15px 0;
+}
+.panel-body ul li p{
+	padding-bottom: 25px;
+	padding-top: 10px;
+}
+.panel-body ul li img{
+	 margin-right: 10px;
+	 margin-top: 10px;
+}
+.timestamp{
+	display: block;
+	font-size: 9px;
+	color: #b1b1b1;
+}
+
+#maina{
+	background: white;
+
+}
+#mainz{
+	background: white;
+}
+#mainx{
+	background: white;
+	margin-bottom: 50px;
+}
+.row{
+	margin-left: 15px;
+}
+
+.ms{
+	height: 580px;
+	background-size: 100% 100%;
+	opacity: 0.8;
+	overflow-y: auto;
+}
+.ms::-webkit-scrollbar {/*滚动条整体样式*/
+            width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+            height: 10px;
+}
+.ms::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: #ccc;
+}
+.ms::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    background: rgba(0,0,0,0.1);
+}
+.ms::-webkit-scrollbar {
+        display: none;
+    }
+.ms:hover::-webkit-scrollbar{
+
+        display: block;
+    
+}.ms::-webkit-scrollbar {/*滚动条整体样式*/
+            width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+            height: 10px;
+}
+.ms::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: gray;
+}
+.ms::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    background: rgba(0,0,0,0.1);
+}
+.ms::-webkit-scrollbar {
+        display: none;
+    }
+.ms:hover::-webkit-scrollbar{
+
+        display: block;
+    
+}
